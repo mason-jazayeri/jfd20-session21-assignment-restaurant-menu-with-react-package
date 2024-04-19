@@ -7,6 +7,7 @@ export default function MenuItemsList(props) {
                 <li key={item.id} className="menu-item">
                     <div className="menu-item-photo">
                         <img src={item.photo} />
+                        {item.isNew === true ? <span>New</span> : ""}
                     </div>
                     <div className="menu-item-content">
                         <div className="menu-item-content-up-side">

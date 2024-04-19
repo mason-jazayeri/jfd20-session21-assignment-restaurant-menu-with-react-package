@@ -40,7 +40,7 @@ export var menuItems = [
         description: "۲۶۰ میلی لیتر، شیر، ۲ شات اسپرسو قهوه ۱۰۰% عربیکا، یخ، ظرف شیشه ای",
         price: 85000,
         photo: "./images/items/item002.jpeg",
-        isNew: false,
+        isNew: true,
         category: "نوشیدنی سرد",
     },
     {
@@ -67,7 +67,7 @@ export var menuItems = [
         description: "فیله گوساله، کاهو بنفش، سس مخصوص",
         price: 340000,
         photo: "./images/items/item005.jpeg",
-        isNew: false,
+        isNew: true,
         category: "پیش غذا",
     },
     {
@@ -139,7 +139,7 @@ export var menuItems = [
         description: "۲ اسکوپ بستنی وانیل، ۲ اسکوپ بستنی شکلات، شوکو رول، اوریو",
         price: 140000,
         photo: "./images/items/item013.jpg",
-        isNew: false,
+        isNew: true,
         category: "دسر",
     },
     {
@@ -148,7 +148,7 @@ export var menuItems = [
         description: "",
         price: 128000,
         photo: "./images/items/item014.jpeg",
-        isNew: false,
+        isNew: true,
         category: "دسر",
     },
     {

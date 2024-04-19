@@ -183,12 +183,31 @@ color: #e44c2a;
     width: 12rem;
     padding-left: 1.5rem;
     flex-shrink: 0;
+    position: relative;
+    left: 0;
+    top: 0;
 }
 
 .main-section .menu-items-list ul .menu-item .menu-item-photo img {
     display: block;
     width: 100%;
     border-radius: 1rem;
+}
+
+.main-section .menu-items-list ul .menu-item .menu-item-photo span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: -.8rem;
+    top: -.8rem;
+    width: 3.5rem;
+    height: 2.2rem;
+    border-radius: 1.2rem;
+    background-color: #e44c2a;
+    color: #fff;
+    font-weight: 300;
+    font-size: 1.2rem;
 }
 
 .main-section .menu-items-list ul .menu-item .menu-item-content {
