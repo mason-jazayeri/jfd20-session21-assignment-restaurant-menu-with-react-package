@@ -1,17 +1,28 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import './css/style.css';
+import Header from "./Header";
+import filterMenuItems from "./filterMenuItems"
+import MenuItemsList from './MenuItemsList';
+import Footer from "./Footer";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+
+const siteWrapper = (
+  <div className="site-wrapper">
+      <Header></Header>
+      <div className="main-section">
+        <div className="container">
+          <MenuItemsList menuItems={filterMenuItems("همه موارد")} categoryName="همه موارد"></MenuItemsList>
+          <MenuItemsList menuItems={filterMenuItems("پیش غذا")} categoryName="پیش غذا"></MenuItemsList>
+          <MenuItemsList menuItems={filterMenuItems("غذای اصلی")} categoryName="غذای اصلی"></MenuItemsList>
+          <MenuItemsList menuItems={filterMenuItems("دسر")} categoryName="دسر"></MenuItemsList>
+          <MenuItemsList menuItems={filterMenuItems("نوشیدنی گرم")} categoryName="نوشیدنی گرم"></MenuItemsList>
+          <MenuItemsList menuItems={filterMenuItems("نوشیدنی سرد")} categoryName="نوشیدنی سرد"></MenuItemsList>
+        </div>
+      </div>
+      <Footer></Footer>
+  </div>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+root.render(siteWrapper);
